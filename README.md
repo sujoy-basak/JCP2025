@@ -1,7 +1,7 @@
 To run the codes, first make sure you have julia installed in your system.
 
-## Step 1: 
-Set the parameters in the `run` files in `Examples` directory. For examples set `degree` as 1,2,3, or 4; `final_time`; `boundary_condition` etc.
+## Step 1: Set the parameters
+In the `run` files in `Examples` directory modify the parameters if needed. For examples set `degree` as 1,2,3, or 4; `final_time`; `boundary_condition` etc.
 
 ## Step 2: Activate project environment in Julia
 ```shell
