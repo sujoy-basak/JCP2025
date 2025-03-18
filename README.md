@@ -1,3 +1,5 @@
+### This repository is ispired from an old version of [`Tenkai.jl`](https://github.com/Arpit-Babbar/Tenkai.jl). Significant modifications and adaptations have been made to extend its functionality. 
+
 To run the codes, first make sure you have julia installed in your system.
 
 ## Step 1: Set the parameters
