@@ -1348,6 +1348,16 @@ function SSFR.post_process_soln(eq::RHD1D, aux, problem, param)
    end
 
    end # timer
+          # Print timer data on screen
+          print_timer(aux.timer, sortby = :firstexec)
+          print("\n")
+          show(aux.timer)
+          print("\n")
+          println("Time outside write_soln = "
+                  *
+                  "$(( TimerOutputs.tottime(timer)
+                      - TimerOutputs.time(timer["Write solution"]) ) * 1e-9)s")
+          println("─────────────────────────────────────────────────────────────────────────────────────────")
 timer_file = open("./output/timer.json", "w")
    JSON3.write(timer_file, TimerOutputs.todict(timer))
    close(timer_file)
